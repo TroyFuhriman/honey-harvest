@@ -1,0 +1,13 @@
+
+.text-shadow{
+  text-shadow: 1px 1px black;
+}
+.resize{
+  width: 200px;
+  height: 300px;
+}
+.disable{
+  pointer-events: none;
+  background-color: grey;
+  border-color: red;
+}

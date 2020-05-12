@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Honey Harvester</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-secondary">
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col bg-primary text-center text-light text-shadow">
+        <h1>Honey Harvester</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row text-center">
+      <div class="col-12">
+        <img onclick="app.gameController.harvest()" class="resize border border-dark rounded-circle" src="beehive.jpg"
+          alt="">
+      </div>
+      <div class="col-12 text-light text-shadow">
+        <h1>Amount of Honey: <span id="honey">
+          </span>
+        </h1>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <button id="scraper-1" class="btn btn-success disable" onclick="app.gameController.addTool('scraper')"><span
+            id="scraper"></span></button>
+      </div>
+      <div class="col">
+        <button id="hive-1" class="btn btn-success disable" onclick="app.gameController.addTool('hive')"><span
+            id="hive"></span></button>
+      </div>
+      <div class="col">
+        <button id="beekeeper-1" class="btn btn-success disable" onclick="app.gameController.addTool('beekeeper')"><span
+            id="beekeeper"></span></button>
+      </div>
+      <div class="col">
+        <button id="robots-1" class="btn btn-success disable" onclick="app.gameController.addTool('robots')"><span
+            id="robots"></span></button>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-danger" onclick="app.gameController.reset()">Reset</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./app/main.js" type="module"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
